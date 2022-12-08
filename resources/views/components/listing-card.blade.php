@@ -1,6 +1,6 @@
 @props(['listing'])
 
-<div class="max-w-lg p-8 mx-auto my-8 rounded border border-gray-200">
+<div class="max-w-2xl p-8 mx-auto my-8 rounded border border-gray-200">
       
   <h2 class="mb-8 text-xl font-bold"> 
     {{ $listing->title }} 

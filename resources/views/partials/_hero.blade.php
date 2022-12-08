@@ -13,4 +13,7 @@
     </a>
 
   </div>
+
 </div>
+
+<x-hero-search />
