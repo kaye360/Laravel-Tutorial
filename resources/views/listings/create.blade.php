@@ -92,7 +92,7 @@
         class="resize-none w-full max-w-xl h-40 p-2 rounded 
                outline outline-blue-300
                text-sm font-light tracking-wide"
-      ></textarea>
+      >{{ old('description') }}</textarea>
 
       @error('description')
         <p class="my-4 text-sm text-red-500 -translate-y-2">{{ $message }}</p>

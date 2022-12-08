@@ -13,5 +13,6 @@
       class="p-2 rounded w-full
              outline outline-1 outline-gray-300 focus:outline-blue-500
              text-sm font-light tracking-wide"
+      value="{{ old($name) }}"
     />
   </label>
