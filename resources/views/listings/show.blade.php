@@ -14,10 +14,7 @@
   @else
 
     {{-- Job Title heading  --}}
-    <h2 class="w-full text-2xl p-8 bg-blue-200">
-      View Listing:
-      {{ $listing->title }}
-    </h2>
+    <x-layout.heading :text="'View Listing: ' . $listing->title" />
 
     {{-- Back Button --}}
     <div class="px-8 my-4">

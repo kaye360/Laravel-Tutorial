@@ -1,14 +1,14 @@
 
-<div class="grid grid-cols-2 py-24 bg-red-100 text-center">
+<div class="grid grid-cols-2 py-24 bg-blue-900 text-center text-white">
   <div class="font-bold text-xl">
     Laragigs
   </div>
 
   <div>
     
-    <h2 class="my-4">Find or post jobs and projects</h2>
+    <h2 class="my-4 text-">Find or post jobs and projects</h2>
 
-    <a href="#" class="inline-block rounded p-4 bg-red-700 text-white hover:bg-blue-700">
+    <a href="#" class="inline-block rounded p-4 bg-blue-600 hover:bg-red-600">
       Sign Up
     </a>
 

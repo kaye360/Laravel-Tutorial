@@ -1,7 +1,7 @@
 <x-layout.wrapper>
 
 
-  <h2 class="my-4 font-bold text-xl" >Edit gig</h2>
+  <x-layout.heading text="Edit Gig" />
 
   <a 
     href="/laragigs/public/listing/{{ $listing->id }}"

@@ -25,7 +25,7 @@
 
 <div class="px-8">
 
-  <header class="flex justify-between items-center bg-blue-300 px-8 py-4">
+  <header class="flex justify-between items-center bg-white px-8 py-4">
     <x-layout.logo />
     <x-layout.nav />
   </header>

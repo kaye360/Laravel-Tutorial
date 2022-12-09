@@ -1,7 +1,7 @@
 <x-layout.wrapper>
 
 
- <h2 class="my-4 font-bold text-xl" >Create a gig</h2>
+<x-layout.heading text="Create a Gig" />
 
  <form method="POST" action="/laragigs/public/listings" enctype="multipart/form-data">
   @csrf

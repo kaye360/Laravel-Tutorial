@@ -1,10 +1,17 @@
-@props(['href', 'text'])
+@props(['href', 'text', 'icon' => false])
 
 <li>
   <a 
     href="{{ $href }}" 
-    class="text-blue-800 hover:text-red-700 font-bold"
+    class="inline-flex items-center gap-1
+           text-black hover:text-red-700 font-bold"
   >
+    @if ($icon)
+      <span class="material-icons-outlined">
+        {{ $icon }}
+      </span>
+    @endif 
+
     {{ $text }}
   </a>
 </li>
