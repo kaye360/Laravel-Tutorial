@@ -1,8 +1,4 @@
-@extends('layout')
-
-
-@section('content')
-
+<x-layout.wrapper>
 
   @if(empty($listing))
   
@@ -85,7 +81,7 @@
           {{ $listing->description }}
         </p>
     
-        <x-listing-tags :tags="$listing->tags" />
+        <x-listings.tags :tags="$listing->tags" />
 
       </div> {{-- end job data--}}
 
@@ -121,4 +117,4 @@
       
     @endif
 
-@endsection
+  </x-layout.wrapper>

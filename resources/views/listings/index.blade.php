@@ -1,20 +1,16 @@
-@extends('layout')
+<x-layout.wrapper>
 
-
-@section('content')
-@include('partials._hero')
+  <x-hero.hero />
 
 
   @if( count($listings) === 0 )
-    <p>
+    <p class="p-8">
       No Listings Found
     </p>
   @else
 
     @foreach($listings as $listing)
-
-      <x-listing-card :listing="$listing" />
-      
+      <x-listings.card :listing="$listing" />
     @endforeach
 
     <div class="mx-auto my-2 max-w-2xl">
@@ -23,4 +19,4 @@
 
   @endif
 
-@endsection
+</x-layout.wrapper>

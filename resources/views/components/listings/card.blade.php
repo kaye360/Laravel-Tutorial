@@ -43,7 +43,7 @@
       </a>
     </p>
     
-    <x-listing-tags :tags="$listing->tags" />
+    <x-listings.tags :tags="$listing->tags" />
   </div>
 
 </div>

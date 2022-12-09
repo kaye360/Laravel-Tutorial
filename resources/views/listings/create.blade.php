@@ -1,9 +1,4 @@
- @extends('layout')
-
-
-
-
- @section('content')
+<x-layout.wrapper>
 
 
  <h2 class="my-4 font-bold text-xl" >Create a gig</h2>
@@ -14,7 +9,7 @@
   <div class="flex flex-col gap-4 my-4">
 
     <div>
-      <x-listing-input
+      <x-listings.input
         label="Company Name" 
         name="company"
         :value="old('company')"
@@ -25,7 +20,7 @@
     </div>
 
     <div>
-      <x-listing-input
+      <x-listings.input
         label="Job Title" 
         name="title"
         :value="old('title')"
@@ -37,7 +32,7 @@
     </div>
     
     <div>
-      <x-listing-input
+      <x-listings.input
         label="Location" 
         name="location"
         :value="old('location')"
@@ -49,7 +44,7 @@
     </div>
 
     <div>
-      <x-listing-input
+      <x-listings.input
         label="Website" 
         name="website"
         :value="old('website')"
@@ -61,7 +56,7 @@
       </div>
       
       <div>
-        <x-listing-input
+        <x-listings.input
         label="Email"
         name="email"
         :value="old('email')"
@@ -73,7 +68,7 @@
     </div>
 
     <div>
-      <x-listing-input
+      <x-listings.input
         label="Tags (Comma Separated)" 
         name="tags"
         :value="old('tags')"
@@ -119,4 +114,4 @@
  </form>
 
 
- @endsection
+</x-layout.wrapper>

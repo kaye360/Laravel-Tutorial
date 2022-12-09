@@ -26,12 +26,12 @@
 <div class="px-8">
 
   <header class="flex justify-between items-center bg-blue-300 px-8 py-4">
-    <x-layout-logo />
-    <x-layout-nav />
+    <x-layout.logo />
+    <x-layout.nav />
   </header>
 
   <main>
-    @yield('content')
+    {{ $slot }}
   </main>
 
 </div>

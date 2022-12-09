@@ -1,12 +1,7 @@
-@extends('layout')
+<x-layout.wrapper>
+
+  <h2>Users</h2>
 
 
 
-
-@section('content')
-
-<h2>Users</h2>
-
-
-
-@endsection
+</x-layout.wrapper>

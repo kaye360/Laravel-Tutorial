@@ -16,4 +16,4 @@
 
 </div>
 
-<x-hero-search />
+<x-hero.search />
