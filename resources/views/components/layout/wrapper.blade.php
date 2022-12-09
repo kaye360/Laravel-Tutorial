@@ -14,8 +14,33 @@
   <script>
     tailwind.config = {
       theme: {
+        extend: {
+          animation: {
+            flash : 'flash 5s ease-in-out both',
+          },
+          keyframes: {
+            flash: {
+              '0%' : { 
+                transform: 'translate(-50%, -100%)',
+                opacity : '0',
+              },
+              '20%' : { 
+                transform: 'translate(-50%, 0)',
+                opacity : '1',
+              },
+              '90%' : {
+                transform: 'translate(-50%, 0)',
+                opacity : '1',
+              },
+              '100%' : {
+                opacity : '0',
+                display : 'none',
+              },
+            },
+          },
+        },
         fontFamily : {
-          'sans': ['Poppins', 'Helvetica', 'sans-serif']
+          'sans': ['Poppins', 'Helvetica', 'sans-serif'],
         }
       }
     }
@@ -36,5 +61,7 @@
 
 </div>
   
+<x-layout.flash />
+
 </body>
 </html>

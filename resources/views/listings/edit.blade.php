@@ -5,7 +5,7 @@
 
   <a 
     href="/laragigs/public/listing/{{ $listing->id }}"
-    class="inline-flex items-center px-2 py-1
+    class="inline-flex items-center my-4 px-2 py-1
           border border-gray-300 hover:border-gray-600"
   >
     <span class="material-icons-outlined">keyboard_backspace</span>

@@ -37,6 +37,9 @@ Route::delete('/listings/{listing}', [ListingController::class, 'destroy'])->mid
 // Show Single Listng
 Route::get('/listing/{listing}', [ListingController::class, 'show']);
 
+// Show Manage Listing page
+Route::get('/listings/manage', [ListingController::class, 'manage'])->middleware(('auth'));
+
 
 
 // Show Register Create Form

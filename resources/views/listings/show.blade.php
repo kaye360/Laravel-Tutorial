@@ -84,34 +84,6 @@
 
     </div> {{-- end logo/job data flex wrapper --}}
 
-    {{-- Edit/Delete Buttons --}}
-    <div>
-    
-      <a 
-        href="/laragigs/public/listings/{{ $listing->id }}/edit"
-        class="inline-flex items-center gap-2 px-4 py-1 border border-gray-300"
-      >
-        <span class="material-icons-outlined">edit</span>
-        Edit
-      </a>
-    
-      <form method="POST" action="/laragigs/public/listings/{{ $listing->id }}" class="inline-block">
-
-        @csrf
-        @method('DELETE')
-
-        <button 
-          class="inline-flex items-center gap-2 px-4 py-1 border border-red-400 text-red-400"
-        >
-          <span class="material-icons-outlined">delete</span>
-          Delete
-        </button>
-
-      </form>
-      
-    </div>
-
-      
     @endif
 
   </x-layout.wrapper>

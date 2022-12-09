@@ -16,7 +16,7 @@
       />
 
       <x-layout.nav-link 
-        href="/laragigs/public/listings/create"
+        href="/laragigs/public/listings/manage"
         text="Manage"
         icon="settings"
       />
