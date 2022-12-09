@@ -1,7 +1,20 @@
 <nav>
   <ul class="flex align-center gap-4">
-    <li><a href="/laragigs/public/listings/create" class="text-blue-800 hover:text-red-700 font-bold">Create</a></li>
-    <li><a href="#" class="text-blue-800 hover:text-red-700 font-bold">Link</a></li>
-    <li><a href="#" class="text-blue-800 hover:text-red-700 font-bold">Link</a></li>
+
+    <x-layout-nav-link 
+      href="/laragigs/public/listings/create"
+      text="Create"
+    />
+
+    <x-layout-nav-link 
+      href="/laragigs/public/register"
+      text="Register"
+    />
+
+    <x-layout-nav-link 
+      href="/laragigs/public/login"
+      text="Login"
+    />
+
   </ul>
 </nav>

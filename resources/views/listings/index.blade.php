@@ -17,6 +17,10 @@
       
     @endforeach
 
+    <div class="mx-auto my-2 max-w-2xl">
+      {{ $listings->links() }}
+    </div>
+
   @endif
 
 @endsection

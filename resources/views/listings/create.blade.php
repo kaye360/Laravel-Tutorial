@@ -1,19 +1,23 @@
  @extends('layout')
 
+
+
+
  @section('content')
 
 
- <h2 class="my-4 font-bold text-xl">Create a gig</h2>
+ <h2 class="my-4 font-bold text-xl" >Create a gig</h2>
 
- <form method="POST" action="/laragigs/public/listings">
+ <form method="POST" action="/laragigs/public/listings" enctype="multipart/form-data">
   @csrf
   
   <div class="flex flex-col gap-4 my-4">
 
     <div>
-      <x-listing-create-input
+      <x-listing-input
         label="Company Name" 
         name="company"
+        :value="old('company')"
       />
       @error('company')
         <p class="my-4 text-sm text-red-500 -translate-y-2">{{ $message }}</p>
@@ -21,9 +25,10 @@
     </div>
 
     <div>
-      <x-listing-create-input
+      <x-listing-input
         label="Job Title" 
         name="title"
+        :value="old('title')"
       />
 
       @error('title')
@@ -32,9 +37,10 @@
     </div>
     
     <div>
-      <x-listing-create-input
+      <x-listing-input
         label="Location" 
         name="location"
+        :value="old('location')"
       />
 
       @error('location')
@@ -43,9 +49,10 @@
     </div>
 
     <div>
-      <x-listing-create-input
+      <x-listing-input
         label="Website" 
         name="website"
+        :value="old('website')"
       />
 
       @error('website')
@@ -54,9 +61,10 @@
       </div>
       
       <div>
-        <x-listing-create-input
+        <x-listing-input
         label="Email"
         name="email"
+        :value="old('email')"
       />
       
       @error('email')
@@ -65,16 +73,17 @@
     </div>
 
     <div>
-      <x-listing-create-input
+      <x-listing-input
         label="Tags (Comma Separated)" 
         name="tags"
+        :value="old('tags')"
       />
       @error('tags')
         <p class="my-4 text-sm text-red-500 -translate-y-2">{{ $message }}</p>
       @enderror
     </div>
 
-    {{-- <label class="flex flex-col gap-2">
+    <label class="flex flex-col gap-2">
       Company Logo
       <input 
         type="file" name="logo"
@@ -83,7 +92,7 @@
     </label>
     @error('logo')
       <p class="my-4 text-sm text-red-500">{{ $message }}</p>
-    @enderror --}}
+    @enderror
 
     <div>
       <label class="block">Description</label>
