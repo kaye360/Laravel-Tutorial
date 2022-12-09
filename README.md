@@ -10,3 +10,4 @@ This web app features:
 - user sign up, login (auth), and log out
 - users can manage, create, edit, and delete job postings
 - guests can view postings, login, or sign up
+- pagination, auth middleware, table relationships, search jobs, blade components
